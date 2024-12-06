@@ -46,3 +46,14 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+git status
+
+git add .
+
+
+
+   git commit -m "Descripción de los cambios realizados"
+
+   git push origin main
