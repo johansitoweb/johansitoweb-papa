@@ -1,11 +1,45 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import NombrePrincipal from '../components/NombrePrincipal.astro';
+import Proyectos from '../components/Proyectos.astro';
+import ExperienciaLaboral from '../components/ExperienciaLaboral.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="johansitoweb." description="Este es un portafolio con cada una de las habilidades de johansitoweb">
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8"><h2><strong>johansitoweb</strong></h2></div>
+			<div class="col-sm-4">
+				<img src="https://fkskzkzkkz.my.canva.site/johansitoweb/video/52ef5f53797cec9bffb810b9c181c956.gif" alt="">
+			</div>
+			<div class="content-principal-nombre">
+				<NombrePrincipal/>
+				<br><br><br>
+				<ExperienciaLaboral/>
+			</div>
+		</div>
+
+	</div>
+	<Proyectos/>
+	
+</main>
 </Layout>
+	
+<style>
+	container-fluid{
+		margin: 9px;
+		padding: 9px;
+	}
+	h2{
+		color: white;
+		font-size: 20px;
+	}
+	img{
+		width:480px;
+		height: 340px;
+	}
+	.content-principal-nombre{}
+</style>
